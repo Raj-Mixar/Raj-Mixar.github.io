@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Raj Sahani</title>
+  <meta name="description" content="Raj Sahani — founding engineer at Mixar. AI-first builder: I build with agents every day, and build the agents themselves.">
+  <meta property="og:title" content="Raj Sahani — AI-first engineer">
+  <meta property="og:description" content="Founding engineer at Mixar, the AI-native 3D editor. Agents, MCP, evals, and the tools that let AI do real work.">
+  <meta name="theme-color" content="#0b0e14">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230b0e14'/><text x='6' y='22' font-family='monospace' font-size='16' font-weight='700' fill='%237ee787'>&gt;_</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#about">Skip to content</a>
+
+  <!-- ───────── editor chrome / nav ───────── -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="prompt">~/raj</span><span class="caret" aria-hidden="true">_</span>
+      </a>
+      <nav class="tabs" aria-label="Sections">
+        <a href="#about" data-spy="about"><span class="ext md">md</span>about</a>
+        <a href="#work" data-spy="work"><span class="ext dir">/</span>work</a>
+        <a href="#experience" data-spy="experience"><span class="ext log">log</span>experience</a>
+        <a href="#stack" data-spy="stack"><span class="ext json">{}</span>stack</a>
+        <a href="#contact" data-spy="contact"><span class="ext sh">sh</span>contact</a>
+      </nav>
+      <div class="actions">
+        <button class="kbd-btn" id="palette-open" aria-label="Open command palette"><kbd>⌘</kbd><kbd>K</kbd></button>
+        <button class="icon-btn" id="theme-toggle" aria-label="Toggle light / dark theme">
+          <svg class="sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <svg class="moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ───────── hero ───────── -->
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="comment">// hello, world</p>
+        <h1>Raj Sahani</h1>
+        <p class="role"><span class="kw">const</span> role = <span class="str">"Founding Engineer @ Mixar"</span>;</p>
+        <p class="lede">
+          I take AI from <strong>demo to production</strong>. As a founding engineer at Mixar,
+          I helped grow an AI-native product from zero to 10,000+ users.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="#work">./see-work</a>
+          <a class="btn" href="#contact">./get-in-touch</a>
+        </div>
+      </div>
+
+      <div class="term" aria-label="Terminal introduction">
+        <div class="term-bar">
+          <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+          <span class="term-title">raj@mixar: ~</span>
+        </div>
+        <pre class="term-body" id="hero-term" aria-live="polite"></pre>
+      </div>
+    </section>
+
+    <!-- ───────── stats ───────── -->
+    <section class="stats" aria-label="Highlights">
+      <div class="stat"><span class="num" data-count="10">10</span><span class="plus">k+</span><span class="label">users, from zero</span></div>
+      <div class="stat"><span class="num" data-count="13">13</span><span class="plus">+</span><span class="label">AI model families integrated</span></div>
+      <div class="stat"><span class="num" data-count="6200">6,200</span><span class="plus">+</span><span class="label">commits since 2025</span></div>
+      <div class="stat"><span class="num" data-count="5">5</span><span class="plus">+</span><span class="label">years shipping production systems</span></div>
+    </section>
+
+    <!-- ───────── about ───────── -->
+    <section id="about" class="section">
+      <h2 class="path"><span class="dim">~/</span>about.md</h2>
+
+      <div class="about-grid">
+        <div class="bio">
+          <p class="bio-lead">I build products where AI does the real work.</p>
+          <p>I'm a founding engineer at <a href="https://mixar.app" target="_blank" rel="noopener">Mixar</a>, an AI-native 3D editor. I helped take it from first commit to more than <strong>10,000 users</strong>, and along the way I've worked on every layer: the desktop app, the backend and cloud, the AI agent at its core, and the evaluation systems that tell us whether it's getting better.</p>
+          <p>I adopt early by instinct. When a new model or tool comes out, I've usually already tried it. AI isn't a side tool for me but my default way of working. Agents write, test and review code alongside me every day, and I design the workflows that let them do that safely.</p>
+          <p>I believe the next generation of software will be built by people who know how to direct AI well. That's the craft I'm working on, and it's the future I want to help shape.</p>
+        </div>
+
+        <aside class="profile">
+          <div class="file-tab"><span class="ext json">yml</span>profile.yaml</div>
+<pre><code><span class="k">name</span><span class="p">:</span>  <span class="s">Raj Sahani</span>
+<span class="k">role</span><span class="p">:</span>  <span class="s">Founding Engineer @ Mixar</span>
+<span class="k">mindset</span><span class="p">:</span> <span class="s">AI-first, early adopter</span>
+<span class="k">focus</span><span class="p">:</span>
+  <span class="p">-</span> <span class="s">AI agents &amp; LLM products</span>
+  <span class="p">-</span> <span class="s">0 → 1 product engineering</span>
+  <span class="p">-</span> <span class="s">automation with AI</span>
+<span class="k">scaled</span><span class="p">:</span> <span class="s">0 → 10k+ users</span>
+<span class="k">pairs_with</span><span class="p">:</span> <span class="s">Claude Code, Codex</span>
+<span class="k">status</span><span class="p">:</span> <span class="ok">● building</span></code></pre>
+        </aside>
+      </div>
+
+      <div class="principles">
+        <div class="principle">
+          <span class="idx">01</span>
+          <h3>Agents do, people direct</h3>
+          <p>Give AI the tools to act, and keep people in charge of the vision.</p>
+        </div>
+        <div class="principle">
+          <span class="idx">02</span>
+          <h3>Measure, don't guess</h3>
+          <p>Evals and automated tests turn AI behaviour into something you can ship with confidence.</p>
+        </div>
+        <div class="principle">
+          <span class="idx">03</span>
+          <h3>Adopt early, ship daily</h3>
+          <p>Models change what's possible every few months. Try them first, then ship in small steps.</p>
+        </div>
+        <div class="principle">
+          <span class="idx">04</span>
+          <h3>Stay open</h3>
+          <p>Let any AI work with your product. Open protocols beat walled gardens.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────── work ───────── -->
+    <section id="work" class="section">
+      <h2 class="path"><span class="dim">~/</span>work<span class="dim">/</span></h2>
+      <p class="section-sub"><span class="prompt-sym">$</span> cat ~/work/mixar/impact.md <span class="dim">— highlights from building Mixar</span></p>
+
+      <div class="cards">
+        <article class="card feature">
+          <div class="card-head"><span class="folder">growth</span><span class="metric">0 → 10k+</span></div>
+          <h3>From first commit to 10,000+ users</h3>
+          <p>Joined as a founding engineer and helped take Mixar from an idea to an AI-native 3D editor used by more than 10,000 creators, with frequent releases on macOS, Windows and Linux.</p>
+          <ul class="tags"><li>0 → 1</li><li>product</li><li>scale</li></ul>
+        </article>
+
+        <article class="card">
+          <div class="card-head"><span class="folder">full-stack</span><span class="metric">app · api · web</span></div>
+          <h3>Every layer of the product</h3>
+          <p>I've built across the whole stack: the Blender-based desktop app, the Python backend and APIs, the website and the internal admin tools. I own features from design through release.</p>
+          <ul class="tags"><li>Python</li><li>C++</li><li>TypeScript</li><li>FastAPI</li><li>React</li></ul>
+          <a class="card-link" href="https://github.com/Mixar-AI/mixar-app" target="_blank" rel="noopener">desktop app is open source ↗</a>
+        </article>
+
+        <article class="card">
+          <div class="card-head"><span class="folder">ai</span><span class="metric">13+ models</span></div>
+          <h3>AI at the core</h3>
+          <p>Helped build Mixie, Mixar's in-app AI agent, and integrated more than 13 AI model families for language, image, 3D and video. Users can bring their own keys, and outside agents like Claude, ChatGPT and Codex can drive Mixar over MCP.</p>
+          <ul class="tags"><li>agents</li><li>LLMs</li><li>MCP</li><li>Anthropic</li><li>OpenAI</li><li>Gemini</li></ul>
+        </article>
+
+        <article class="card">
+          <div class="card-head"><span class="folder">cloud</span><span class="metric">AWS</span></div>
+          <h3>Production on AWS</h3>
+          <p>Run the platform on AWS with containerised services, managed Postgres, Redis-backed job queues and object storage. CI/CD, monitoring and AI tracing catch problems before users report them.</p>
+          <ul class="tags"><li>AWS</li><li>Docker</li><li>Postgres</li><li>Redis</li><li>GitHub Actions</li></ul>
+        </article>
+
+        <article class="card">
+          <div class="card-head"><span class="folder">automation</span><span class="metric">AI-driven</span></div>
+          <h3>Engineering, automated with AI</h3>
+          <p>Set up workflows where AI agents do real engineering work. Agents click through the real app to test it, bug reports become tested draft fixes, and releases are signed and shipped in one step.</p>
+          <ul class="tags"><li>AI agents</li><li>QA automation</li><li>CI/CD</li><li>Claude Code</li></ul>
+        </article>
+
+        <article class="card">
+          <div class="card-head"><span class="folder">evals</span><span class="metric">LLM judges</span></div>
+          <h3>Measured before shipped</h3>
+          <p>Built an evaluation platform that scores the agent with automated checks and LLM judges, so every model or prompt change is measured before it reaches users.</p>
+          <ul class="tags"><li>evals</li><li>LLM-as-judge</li><li>Next.js</li><li>FastAPI</li></ul>
+        </article>
+      </div>
+      <!-- activity heatmap -->
+      <div class="activity">
+        <div class="activity-head">
+          <p class="section-sub"><span class="prompt-sym">$</span> git log --author=raj --since=1.year <span class="dim">| heatmap</span></p>
+          <p class="activity-total" id="activity-total"></p>
+        </div>
+        <div class="heatmap-wrap"><div class="heatmap" id="heatmap" role="img" aria-label="Commit activity over the last year"></div></div>
+        <div class="legend"><span>less</span><i class="l0"></i><i class="l1"></i><i class="l2"></i><i class="l3"></i><i class="l4"></i><span>more</span></div>
+      </div>
+    </section>
+
+    <!-- ───────── experience ───────── -->
+    <section id="experience" class="section">
+      <h2 class="path"><span class="dim">~/</span>experience.log</h2>
+      <p class="section-sub"><span class="prompt-sym">$</span> git log --graph --oneline career</p>
+
+      <ol class="gitlog" id="gitlog">
+        <li class="commit head">
+          <div class="rail"><span class="node"></span></div>
+          <div class="commit-body">
+            <div class="commit-meta"><span class="hash">a1f3c0d</span><span class="ref">HEAD → main</span><span class="date">May 2025 — present</span></div>
+            <h3>Founding Engineer <span class="at">@ Mixar</span></h3>
+            <p>Founding team at an AI-native 3D editor, built on Blender with an AI agent at its core.</p>
+            <ul class="points">
+              <li>Scaled the product from first commit to 10,000+ users across macOS, Windows and Linux.</li>
+              <li>Worked across the desktop app, the backend, the web and AWS infrastructure.</li>
+              <li>Helped build the in-app AI agent and integrated 13+ AI model families, plus MCP access for Claude, ChatGPT and Codex.</li>
+              <li>Automated testing, bug fixing and releases with AI agents, and measured every change with evals.</li>
+            </ul>
+            <ul class="tags"><li>AI agents</li><li>LLMs</li><li>AWS</li><li>full-stack</li><li>0 → 1</li></ul>
+          </div>
+        </li>
+        <li class="commit">
+          <div class="rail"><span class="node"></span></div>
+          <div class="commit-body">
+            <div class="commit-meta"><span class="hash">7c2e9b4</span><span class="date">Jul 2021 — Apr 2025 · Gurugram</span></div>
+            <h3>Senior Software Engineer <span class="at">@ CarDekho</span></h3>
+            <p>Built large-scale backend systems for one of India's biggest auto marketplaces.</p>
+            <ul class="points">
+              <li>Led the backend of a multi-tenant lead management platform that processes 1M+ leads a day across 6 businesses. It replaced the legacy system and cut server costs by about 50%.</li>
+              <li>Built the integration, notification, reporting and gateway services behind it. The notification service sends 100K+ messages a day, and adding a new integration now takes over 90% less time.</li>
+              <li>Moved 50K+ users from manual to automated workflows with an event-driven task platform, saving 5K+ person-hours a day.</li>
+              <li>Mentored two junior engineers, and received the <strong>Raise the Bar</strong> award in 2024.</li>
+            </ul>
+            <ul class="tags"><li>Java</li><li>Spring Boot</li><li>microservices</li><li>Kafka</li><li>RabbitMQ</li><li>MongoDB</li><li>Elasticsearch</li><li>AWS</li></ul>
+          </div>
+        </li>
+        <li class="commit">
+          <div class="rail"><span class="node"></span></div>
+          <div class="commit-body">
+            <div class="commit-meta"><span class="hash">3d81f0a</span><span class="date">May — Jun 2020 · Pune</span></div>
+            <h3>Research Intern <span class="at">@ KPIT Technologies</span></h3>
+            <p>Built a thermal model of an EV lithium-ion battery in Simulink, using a Kalman filter to estimate charge and temperature, and integrated it into the EV powertrain.</p>
+          </div>
+        </li>
+        <li class="commit root">
+          <div class="rail"><span class="node"></span></div>
+          <div class="commit-body">
+            <div class="commit-meta"><span class="hash">0e4b2c1</span><span class="ref root-ref">init</span><span class="date">2017 — 2021 · New Delhi</span></div>
+            <h3>B.Tech <span class="at">@ IIT Delhi</span></h3>
+            <p>Studied Chemical Engineering at the Indian Institute of Technology Delhi. Was part of IIT Delhi's team that won the Enactus India national championship in 2019.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ───────── stack ───────── -->
+    <section id="stack" class="section">
+      <h2 class="path"><span class="dim">~/</span>stack.json</h2>
+      <div class="editor code">
+<pre><code><span class="p">{</span>
+  <span class="k">"languages"</span><span class="p">:</span> <span class="p">[</span><span class="s">"Python"</span>, <span class="s">"Java"</span>, <span class="s">"TypeScript"</span>, <span class="s">"C++"</span><span class="p">]</span>,
+  <span class="k">"ai"</span><span class="p">:</span> <span class="p">[</span><span class="s">"LangGraph"</span>, <span class="s">"MCP"</span>, <span class="s">"Anthropic"</span>, <span class="s">"OpenAI"</span>, <span class="s">"Gemini"</span>, <span class="s">"Bedrock"</span>,
+         <span class="s">"fal"</span>, <span class="s">"Replicate"</span>, <span class="s">"RAG / pgvector"</span>, <span class="s">"LLM-as-judge evals"</span><span class="p">]</span>,
+  <span class="k">"backend"</span><span class="p">:</span> <span class="p">[</span><span class="s">"FastAPI"</span>, <span class="s">"Spring Boot"</span>, <span class="s">"microservices"</span>, <span class="s">"PostgreSQL"</span>,
+              <span class="s">"MongoDB"</span>, <span class="s">"Elasticsearch"</span>, <span class="s">"Redis"</span>, <span class="s">"Kafka"</span>, <span class="s">"RabbitMQ"</span><span class="p">]</span>,
+  <span class="k">"frontend"</span><span class="p">:</span> <span class="p">[</span><span class="s">"React"</span>, <span class="s">"Next.js"</span>, <span class="s">"Vite"</span>, <span class="s">"Tauri"</span><span class="p">]</span>,
+  <span class="k">"3d"</span><span class="p">:</span> <span class="p">[</span><span class="s">"Blender (bpy, C++ core, GPU draw)"</span>, <span class="s">"Godot"</span><span class="p">]</span>,
+  <span class="k">"infra"</span><span class="p">:</span> <span class="p">[</span><span class="s">"AWS"</span>, <span class="s">"Docker"</span>, <span class="s">"GitHub Actions"</span>, <span class="s">"Langfuse"</span>, <span class="s">"Sentry"</span>,
+            <span class="s">"Grafana"</span>, <span class="s">"PostHog"</span><span class="p">]</span>,
+  <span class="k">"daily_drivers"</span><span class="p">:</span> <span class="p">[</span><span class="s">"Claude Code"</span>, <span class="s">"Codex"</span><span class="p">]</span>,
+  <span class="k">"currently_exploring"</span><span class="p">:</span> <span class="s">"agents that can see, act and check their own work"</span>
+<span class="p">}</span></code></pre>
+      </div>
+    </section>
+
+    <!-- ───────── interactive shell ───────── -->
+    <section id="shell" class="section">
+      <h2 class="path"><span class="dim">~/</span>shell</h2>
+      <p class="section-sub">Prefer the command line? Type <code>help</code>.</p>
+      <div class="term interactive" id="shell-term">
+        <div class="term-bar">
+          <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+          <span class="term-title">guest@raj: ~</span>
+        </div>
+        <div class="term-body" id="shell-out" aria-live="polite"></div>
+        <form class="term-input" id="shell-form" autocomplete="off">
+          <label for="shell-in"><span class="ps1">guest@raj:~$</span></label>
+          <input id="shell-in" spellcheck="false" autocapitalize="off" aria-label="Terminal command">
+        </form>
+      </div>
+    </section>
+
+    <!-- ───────── contact ───────── -->
+    <section id="contact" class="section">
+      <h2 class="path"><span class="dim">~/</span>contact.sh</h2>
+      <div class="editor code">
+<pre><code><span class="c">#!/usr/bin/env bash</span>
+<span class="c"># Building something with AI? Let's talk.</span>
+
+<span class="v">GITHUB</span>=<a class="s" href="https://github.com/Raj-Mixar" target="_blank" rel="noopener">"github.com/Raj-Mixar"</a>
+<span class="v">LINKEDIN</span>=<a class="s" href="https://www.linkedin.com/in/raj-sahani-461b13165/" target="_blank" rel="noopener">"linkedin.com/in/raj-sahani-461b13165"</a>
+<span class="v">X</span>=<a class="s" href="https://x.com/Raj_Sahani_" target="_blank" rel="noopener">"x.com/Raj_Sahani_"</a>
+<span class="v">EMAIL</span>=<a class="s" href="mailto:raj@mixar.app">"raj@mixar.app"</a>
+
+<span class="f">echo</span> <span class="s">"Say hi. I reply faster than my CI."</span></code></pre>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><span class="dim">/*</span> Built by Raj with an AI pair (Claude Code). No framework, hosted on GitHub Pages. <span class="dim">*/</span></p>
+    <p class="dim">© <span id="year">2026</span> Raj Sahani</p>
+  </footer>
+
+  <!-- ───────── command palette ───────── -->
+  <div class="palette" id="palette" hidden>
+    <div class="palette-box" role="dialog" aria-modal="true" aria-label="Command palette">
+      <input id="palette-in" placeholder="Type a command or search…" autocomplete="off" spellcheck="false">
+      <ul id="palette-list" role="listbox"></ul>
+      <div class="palette-foot"><span><kbd>↑</kbd><kbd>↓</kbd> move</span><span><kbd>↵</kbd> run</span><span><kbd>esc</kbd> close</span></div>
+    </div>
+  </div>
+
+  <script src="activity.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
